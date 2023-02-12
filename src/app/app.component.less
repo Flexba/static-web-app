@@ -83,18 +83,18 @@ header {
     }
 
     &.scroll-r-3{
-      animation: my-animation-right 3s linear infinite;
+      animation: scroll-right 3s linear infinite;
     }
 
     &.scroll-r-5{
-      animation: my-animation-right 5s linear infinite;
+      animation: scroll-right 5s linear infinite;
     }
 
     &.scroll-l-5{
-      animation: my-animation-left 5s linear infinite;
+      animation: scroll-left 5s linear infinite;
     }
     
-    @keyframes my-animation-right {
+    @keyframes scroll-right {
       from {
         transform: translateX(-50%);
       }
@@ -103,7 +103,7 @@ header {
       }
     }
     
-    @keyframes my-animation-left {
+    @keyframes scroll-left {
       from {
         transform: translateX(0);
       }
