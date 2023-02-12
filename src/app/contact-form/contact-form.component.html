@@ -1,0 +1,19 @@
+<form name="contectForm" #form="ngForm">
+    <div class="form-group">
+        <label for="input-name">Name: {{model.name}}</label>
+        <input id="input-name" name="name" type="text" [(ngModel)]="model.name" required>
+    </div>
+    <div class="form-group">
+        <label for="input-email">E-Mail</label>
+        <input id="input-email" name="email" type="email" [(ngModel)]="model.email" required [email]="true">
+    </div>
+    <div class="form-group">
+        <label for="input-phone">Phone</label>
+        <input id="input-phone" name="phone" type="tel" [(ngModel)]="model.phone" required>
+    </div>
+    <div class="form-group">
+        <label for="input-text">Your message</label>
+        <textarea id="input-text" name="text" [(ngModel)]="model.text" required></textarea>
+    </div>
+    <button type="button" (click)="send()" [disabled]="!form.valid">Send</button>
+</form>

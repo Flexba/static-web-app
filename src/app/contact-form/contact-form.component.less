@@ -1,0 +1,45 @@
+@import url("../../definitions.less");
+
+label {
+    display: block;
+    font-size: smaller;
+    font-style: italic;
+}
+
+input, textarea {
+    display: block;
+    width: 100%;
+
+    border: 1px solid @main-color;
+    border-radius: 5px;
+    padding: 1em;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.ng-touched.ng-invalid {
+    border-color: red;
+}
+
+.ng-touched.ng-valid {
+    border-color: green;
+}
+
+button {
+    color: white;
+    padding: 1em 2em;
+    background-color: @main-color;
+    border: none;
+
+    border-radius: 5px;
+}
+
+button:disabled {
+    background-color: fade(@background-color, 50%);
+}
+
+button:not(:disabled) {
+    cursor: pointer;
+}
