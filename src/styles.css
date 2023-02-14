@@ -3,6 +3,19 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+h1 {
+    margin-top: 5vh;
+    margin-bottom: 2vh;
+}
+
 h1, h2 {
     text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
 }

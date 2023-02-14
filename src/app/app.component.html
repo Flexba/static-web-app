@@ -1,55 +1,13 @@
-<header class="banner" role="banner">
-  <h1>Cool company name</h1>
-  <h2>Your software development partner from Austria</h2>
-  <button (click)="openContactForm()">Contact us now</button>
-
-  <div class="scroll-container">
-    <div class="scroller scroll-r-5">
-      <svg viewBox="0 0 300 120" preserveAspectRatio="none" class="scroll">
-        <path d="M0,100 C50,100 100,0 150,0 C200,0 250,100 300,100 L300,120 L0,120 Z" style="stroke: none; fill:#ffffff66;"></path>
-      </svg>
-      <svg viewBox="0 0 300 120" preserveAspectRatio="none" class="scroll">
-        <path d="M0,100 C50,100 100,0 150,0 C200,0 250,100 300,100 L300,120 L0,120 Z" style="stroke: none; fill:#ffffff66"></path>
-      </svg>
-    </div>
-
-    <div class="scroller scroll-l-5">
-      <svg viewBox="0 -10 300 120" preserveAspectRatio="none" class="scroll">
-        <path d="M0,100 C30,100 120,0 150,0 C180,0 270,100 300,100 C330,100 420,0 450,0 L450,120 L0,120 Z" style="stroke: none; fill:#ffffff66;"></path>
-      </svg>
-      <svg viewBox="0 -10 300 120" preserveAspectRatio="none" class="scroll">
-        <path d="M0,100 C30,100 120,0 150,0 C180,0 270,100 300,100 C330,100 420,0 450,0 L450,120 L0,120 Z" style="stroke: none; fill:#ffffff66;"></path>
-      </svg>
-    </div>
-    
-    <div class="scroller scroll-r-3">
-      <svg viewBox="0 0 160 100" preserveAspectRatio="none" class="scroll">
-        <path d="M0,80
-        C10,80 30,20 40,20
-        C50,20 70,80 80,80
-        C90,80 110,20 120,20
-        C130,20 150,80 160,80
-        C170,80 190,20 200,20
-        L200,100 L0,100 Z" style="stroke: none; fill:#ffffff66;"></path>
-      </svg>
-      <svg viewBox="0 0 160 100" preserveAspectRatio="none" class="scroll">
-        <path d="M0,80
-        C10,80 30,20 40,20
-        C50,20 70,80 80,80
-        C90,80 110,20 120,20
-        C130,20 150,80 160,80
-        C170,80 190,20 200,20
-        L200,100 L0,100 Z" style="stroke: none; fill:#ffffff66;"></path>
-      </svg>
-    </div>
-  </div>
-</header>
+<app-header></app-header>
 
 <div class="content" role="main">
   <app-team></app-team>
+
+  <a name="services"></a>
+  <app-services></app-services>
+
+  <a name="contact"></a>
   <app-contact-form></app-contact-form>
 </div>
 
-<div class="background">
-  <div *ngFor="let code of footerCodes">{{code}}</div>
-</div>
+<app-footer></app-footer>

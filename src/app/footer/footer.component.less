@@ -1,0 +1,26 @@
+@import url("../../definitions.less");
+@import url("../animated-svg/animated-svg.less");
+
+footer {
+    position: relative;
+    height: 20vh;
+    align-items: center;
+
+    margin-top: 10vh;
+    
+    background-color: @background-color;
+    background: linear-gradient(180deg,
+        fadeout(white, 100%) 0%,
+        lighten(@background-color, 10%) 5%,
+        darken(@background-color, 10%) 100%);
+}
+
+.scroll-container {
+    position: absolute;
+    top: 0;
+
+    &>* {
+        position: absolute;
+        top: 0;
+    }
+}

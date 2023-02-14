@@ -1,0 +1,33 @@
+@import url("../../definitions.less");
+
+.services {
+    display: grid;
+}
+
+.service {
+    background-color: @background-color;
+    background: linear-gradient(0deg, @background-color 800%, @background-color-monochromatic 100%);
+
+
+    border: 1px solid @main-color;
+    border-radius: 20px;
+
+    text-align: center;
+
+    padding: 10px;
+    margin: 10px;
+
+    &:nth-child(2) {
+        @media only screen and (min-width: 600px) {
+            grid-column: 2;
+        }
+    }
+}
+
+
+
+.service-name {
+    display: block;
+    font-size: 1.2em;
+    margin: 0 auto 10px;
+}

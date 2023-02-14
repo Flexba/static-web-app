@@ -15,17 +15,18 @@ input, textarea {
     padding: 1em;
 
     box-sizing: border-box;
+    resize: none;
 }
 
 .form-group {
     margin-bottom: 10px;
 }
 
-.ng-touched.ng-invalid {
+.ng-dirty.ng-invalid {
     border-color: red;
 }
 
-.ng-touched.ng-valid {
+.ng-dirty.ng-valid {
     border-color: green;
 }
 
@@ -36,6 +37,7 @@ button {
     border: none;
 
     border-radius: 5px;
+    float: right;
 }
 
 button:disabled {
