@@ -5,14 +5,15 @@
 }
 
 .service {
-    background-color: @background-color;
-    background: linear-gradient(0deg, @background-color 800%, @background-color-monochromatic 100%);
-
-
-    border: 1px solid @main-color;
-    border-radius: 20px;
-
     text-align: center;
+
+
+    background-color: @background-color;
+    background: linear-gradient(0deg, @background-color-monochromatic 0%, @background-color 20%);
+
+
+    border: 2px solid @main-color;
+    border-radius: 10px;
 
     padding: 10px;
     margin: 10px;
@@ -22,12 +23,20 @@
             grid-column: 2;
         }
     }
+
+    transition: transform .2s;
+    &:hover {
+        transform: scale(1.05);
+    }
 }
-
-
 
 .service-name {
     display: block;
     font-size: 1.2em;
-    margin: 0 auto 10px;
+    margin: 10px;
+}
+
+.service-description {
+    margin: 10px;
+    display: inline-block;
 }

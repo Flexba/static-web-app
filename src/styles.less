@@ -1,0 +1,45 @@
+@import url("./definitions.less");
+
+* {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: @text-color;
+}
+
+h1 {
+    margin-top: 5vh;
+    margin-bottom: 2vh;
+    color: @main-color-complementary;
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+button, [role=button] {
+    background-color: @element-color;
+    color: white;
+
+    transition: background-color 0.2s;
+
+    &:hover {
+        background-color: darken(@element-color, 10%);
+    }
+}

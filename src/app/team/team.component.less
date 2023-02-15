@@ -41,7 +41,7 @@
         object-fit: contain;
 
         padding: 10px;
-        border: 2px solid black;
+        border: 2px solid @background-color;
         border-radius: 50%;
         background-color: @image-background-color;
     }
@@ -52,6 +52,8 @@
 
   display: inline-block;
   position: relative;
+
+  transition: transform .2s;
 
   .tooltip {
     @tooltip-width: 100px;
@@ -70,10 +72,15 @@
     bottom: 100%;
     left: 50%;
     margin-left: -(@tooltip-width / 2);
+
   }
 
-  &:hover .tooltip {
-    visibility: visible;
+  &:hover {
+    transform: scale(1.05);
+
+    .tooltip {
+      visibility: visible;
+    }
   }
 
   .tooltip::after {
