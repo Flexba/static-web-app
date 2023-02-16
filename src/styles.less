@@ -9,7 +9,6 @@
 h1 {
     margin-top: 5vh;
     margin-bottom: 2vh;
-    color: @main-color-complementary;
     font-size: 3em;
 }
 
@@ -42,4 +41,10 @@ button, [role=button] {
     &:hover {
         background-color: darken(@element-color, 10%);
     }
+}
+
+.content-container {
+    width: 100%;
+    max-width: @max-content-width;
+    margin: 0 auto;
 }
