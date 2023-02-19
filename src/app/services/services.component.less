@@ -1,13 +1,19 @@
 @import url("../../definitions.less");
+@import url("../animated-svg/animated-svg.less");
 
 .pre-services, .post-services {
     display: block;
-    height: 70px;
+    height: 5vw;
     width: 100%;
+    position: relative;
+}
+
+.post-services .scroller {
+    top: 0;
 }
 
 .services {
-    background-color: @background-color-complementary;
+    background-color: @background-color-accent1;
     overflow: hidden;
     padding-bottom: 50px;
 }
@@ -19,8 +25,6 @@
 .service {
     text-align: center;
 
-    background-color: @background-color;
-
     border-radius: 10px;
 
     padding: 10px;
@@ -30,22 +34,6 @@
         @media only screen and (min-width: 600px) {
             grid-column: 2;
         }
-    }
-
-    transition: background-color .2s;
-
-    &:hover {
-        background-color: darken(@background-color, 10%);
-    }
-
-    &:nth-child(odd) {
-        margin-left: -5000px;
-        padding-left: 5000px;
-    }
-
-    &:nth-child(even) {
-        margin-right: -5000px;
-        padding-right: 5000px;
     }
 }
 

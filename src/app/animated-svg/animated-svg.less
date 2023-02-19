@@ -17,7 +17,6 @@
     min-width: 2*@scroller-min-width;
     position: absolute;
     bottom: 0;
-    margin: 0;
 
     .scroll {
         display: inline;
@@ -34,12 +33,20 @@
         animation: scroll-right 5s linear infinite;
     }
 
+    &.scroll-r-10 {
+        animation: scroll-right 10s linear infinite;
+    }
+
     &.scroll-r-12 {
         animation: scroll-right 12s linear infinite;
     }
 
     &.scroll-l-6 {
         animation: scroll-left 6s linear infinite;
+    }
+
+    &.scroll-l-10 {
+        animation: scroll-left 10s linear infinite;
     }
     
     @keyframes scroll-right {
